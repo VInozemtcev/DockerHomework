@@ -1,0 +1,10 @@
+docker build -t lesson11 -f Dockerfile .
+docker run --rm -d -p 3000:80 --name lesson11_app lesson11
+
+
+#without nginx.conf
+docker run --rm -d -p 3000:3000 --name lesson11_app lesson11 
+
+
+
+docker rmi (docker images -q)
